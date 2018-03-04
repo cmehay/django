@@ -25,3 +25,9 @@ Bugfixes
 
 * Fixed a regression where a ``When()`` expression with a list argument crashes
   (:ticket:`29166`).
+
+* Fixed crash when using a ``Window()`` expression in a subquery
+  (:ticket:`29172`).
+
+* Fixed ``AbstractBaseUser.normalize_username()`` crash if the ``username``
+  argument isn't a string (:ticket:`29176`).
